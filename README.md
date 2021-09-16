@@ -3,7 +3,7 @@
 ### _data/filse.yml
 ```yml
 - name: Image name
-  folder: Image folder name in files/
+  folder: Folder name in files/
 ```
 
 ### files/
