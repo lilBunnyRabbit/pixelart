@@ -10,16 +10,23 @@
     
     {% include cdn/google_analytics.html %}
   </head>
-  <body style="margin: 16px; overflow-y: auto; background-color: #23272A;">
-    <div style="display: flex; flex-direction: column; width: 100%; position: relative;">
+  <body>
+    <div class="page-title">
+      PixelArt <span style="font-size: 20px">by lilBunnyRabbit</span>
+    </div>
+
+    <div class="files-stack">
       {% for file in site.data.files %}
-        <div style="display: flex; flex-direction: row; height: 25vh; min-height: 200px; width: 100%; position: relative; margin-bottom: 4px;">
-          <img src="./files/{{ file.folder }}/{{ file.folder }}.png" style="height: 100%; width: auto; border: 4px solid black; image-rendering: pixelated;"></img>
-          <div style="display: flex; flex-direction: column; width: 100%; border: 4px solid black; border-left: 0px; padding: 16px; background-color: #2C2F33;">
-            <div style="font-size: 30px; margin-bottom: 16px; font-family: PixelFont; color: #eeeeee">{{ file.name }}</div>
-            <div style="display: flex; flex-direction: row;">
-              <a href="./files/{{ file.folder }}/source.png" download="{{ file.folder }}-source.png" target="_blank" style="font-family: PixelFont; color: #dddddd; background-color: #23272A; padding: 4px 8px;">Source</a>
-              <a href="./files/{{ file.folder }}/source.aseprite" download="{{ file.folder }}.aseprite" target="_blank" style="font-family: PixelFont; color: #dddddd; background-color: #23272A; padding: 4px 8px; margin-left: 8px;">Aseprite</a>
+        <div class="file-box">
+          <a href="./files/{{ file.folder }}/{{ file.folder }}.png" target="_blank">
+            <img class="file-image" src="./files/{{ file.folder }}/{{ file.folder }}.png"></img>
+          </a>
+
+          <div class="file-data-box">
+            <div class="file-name">{{ file.name }}</div>
+            <div class="file-links">
+              <a class="file-link-source" href="./files/{{ file.folder }}/source.png" download="{{ file.folder }}-source.png" target="_blank">Source</a>
+              <a class="file-link-aseprite" href="./files/{{ file.folder }}/source.aseprite" download="{{ file.folder }}.aseprite" target="_blank">Aseprite</a>
             </div>
           </div>
         </div>
