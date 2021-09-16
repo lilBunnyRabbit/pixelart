@@ -1,10 +1,18 @@
 - name: Half Dead
   folder: half-dead
+  type: png
 - name: Rabbit
   folder: rabbit
+  type: png
+- name: City
+  folder: city
+  type: gif
 - name: Example 1
   folder: example-1
+  type: png
 - name: Example 2
   folder: example-2
+  type: png
 - name: Example 3
   folder: example-3
+  type: png
