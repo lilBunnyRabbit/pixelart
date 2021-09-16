@@ -1,5 +1,7 @@
 - name: Half Dead
   folder: half-dead
+- name: Rabbit
+  folder: rabbit
 - name: Example 1
   folder: example-1
 - name: Example 2
