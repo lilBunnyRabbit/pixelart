@@ -1,4 +1,4 @@
-# PixelArt by lilBunnyRabbit
+# [PixelArt by lilBunnyRabbit](https://lilbunnyrabbit.github.io/pixelart/)
 ## Project Structure
 ### _data/filse.yml
 ```yml
