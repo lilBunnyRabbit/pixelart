@@ -1,0 +1,7 @@
+author: lilBunnyRabbit
+classes: wide
+layout: single
+markdown: kramdown 
+kramdown:
+  input: GFM
+theme: jekyll-theme-primer
