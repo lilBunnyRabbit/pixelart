@@ -14,7 +14,7 @@
     <div style="display: flex; flex-direction: column; width: 100%; position: relative;">
       {% for file in site.data.files %}
         <div style="display: flex; flex-direction: row; height: 25vh; min-height: 200px; width: 100%; position: relative; margin-bottom: 4px;">
-          <img src="./files/{{ file.folder }}/{{ file.folder }}.png" style="height: 100%; width: auto; border: 4px solid black"></img>
+          <img src="./files/{{ file.folder }}/{{ file.folder }}.png" style="height: 100%; width: auto; border: 4px solid black; image-rendering: pixelated;"></img>
           <div style="display: flex; flex-direction: column; width: 100%; border: 4px solid black; border-left: 0px; padding: 16px; background-color: #2C2F33;">
             <div style="font-size: 30px; margin-bottom: 16px; font-family: PixelFont; color: #eeeeee">{{ file.name }}</div>
             <div style="display: flex; flex-direction: row;">
