@@ -1,12 +1,16 @@
-- name: Half Dead
-  folder: half-dead
-  type: png
-  date: 15th September 2021
-- name: Rabbit
-  folder: rabbit
+- name: Thumbs Up
+  folder: thumbs-up
   type: gif
-  date: 16th September 2021
+  date: 17th September 2021
 - name: City
   folder: city
   type: gif
   date: 17th September 2021
+- name: Rabbit
+  folder: rabbit
+  type: gif
+  date: 16th September 2021
+- name: Half Dead
+  folder: half-dead
+  type: png
+  date: 15th September 2021
