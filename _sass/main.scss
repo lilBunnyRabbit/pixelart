@@ -28,47 +28,35 @@ body {
   color: white;
   font-family: BackTo1982;
   font-size: 32px;
-  margin-bottom: 32px;
-}
-
-.files-stack {
+  margin-bottom: 16px;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  width: 100%;
-  position: relative;
+  align-items: center;
+  padding-top: 8px;
 }
 
-.file-box {
-  display: flex;
-  flex-direction: row;
-  height: 200px;
-  width: 100%;
-  position: relative;
-  margin-bottom: 4px;
+.page-title-name {
+  font-family: DisposableDroidBB_bld;
+  font-size: 24px;
 }
 
-.file-image {
-  height: 100%;
-  width: auto;
-  border: 4px solid black;
-  image-rendering: pixelated;
-}
-
-.file-data-box {
+.file-name-and-date {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  border: 4px solid black;
-  border-left: 0px;
-  padding: 16px;
-  background-color: #2c2f33;
-  justify-content: space-between;
 }
 
 .file-name {
   font-size: 30px; 
   font-family: BackTo1982;
   color: #eeeeee;
+  margin-bottom: 16px;
+}
+
+.file-date {
+  font-family: DisposableDroidBB;
+  font-size: 20px;
+  color: #cccccc;
 }
 
 .file-links {
@@ -82,6 +70,7 @@ body {
   color: #dddddd;
   background-color: #23272a;
   padding: 4px 12px;
+  border: 2px solid black;
 }
 
 .file-link:hover {
@@ -96,4 +85,82 @@ body {
 .file-link-aseprite {
   @extend .file-link;
   margin-left: 8px;
+}
+
+// DESKTOP
+.desktop-files-stack {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+}
+
+.desktop-file-box {
+  display: flex;
+  flex-direction: row;
+  height: 200px;
+  width: 100%;
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.desktop-file-box:last-child {
+  margin-bottom: 0px;
+}
+
+.desktop-file-image {
+  height: 100%;
+  width: auto;
+  border: 4px solid black;
+  image-rendering: pixelated;
+}
+
+.desktop-file-data-box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border: 4px solid black;
+  border-left: 0px;
+  padding: 16px;
+  background-color: #2c2f33;
+  justify-content: space-between;
+}
+
+
+// MOBILE
+.mobile-files-stack {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+}
+
+.mobile-file-box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.mobile-file-box:last-child {
+  margin-bottom: 0px;
+}
+
+.mobile-file-image {
+  width: 100%;
+  border: 4px solid black;
+  image-rendering: pixelated;
+}
+
+.mobile-file-data-box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border: 4px solid black;
+  border-top: 0px;
+  padding: 16px;
+  height: 200px;
+  background-color: #2c2f33;
+  justify-content: space-between;
 }

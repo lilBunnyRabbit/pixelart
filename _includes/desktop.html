@@ -1,0 +1,21 @@
+<div class="desktop-files-stack">
+  {% for file in site.data.files %}
+    <div class="desktop-file-box">
+      <a href="./files/{{ file.folder }}/{{ file.folder }}.{{ file.type }}" target="_blank">
+        <img class="desktop-file-image" src="./files/{{ file.folder }}/{{ file.folder }}.{{ file.type }}"></img>
+      </a>
+
+      <div class="desktop-file-data-box">
+        <div class="file-name-and-date">
+          <div class="file-name">{{ file.name }}</div>
+          <div class="file-date">{{ file.date }}</div>
+        </div>
+
+        <div class="file-links">
+          <a class="file-link-source" href="./files/{{ file.folder }}/source.{{ file.type }}" download="{{ file.folder }}-source.{{ file.type }}" target="_blank">Source</a>
+          <a class="file-link-aseprite" href="./files/{{ file.folder }}/source.aseprite" download="{{ file.folder }}.aseprite" target="_blank">Aseprite</a>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+</div>

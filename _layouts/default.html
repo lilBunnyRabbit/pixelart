@@ -12,26 +12,26 @@
   </head>
   <body>
     <div class="page-title">
-      PixelArt <span style="font-size: 20px">by lilBunnyRabbit</span>
+      PixelArt <span class="page-title-name">by lilBunnyRabbit</span>
     </div>
 
-    <div class="files-stack">
-      {% for file in site.data.files %}
-        <div class="file-box">
-          <a href="./files/{{ file.folder }}/{{ file.folder }}.{{ file.type }}" target="_blank">
-            <img class="file-image" src="./files/{{ file.folder }}/{{ file.folder }}.{{ file.type }}"></img>
-          </a>
+    <div id="desktop" style="display: none;">{% include desktop.html %}</div>
+    <div id="mobile" style="display: none;">{% include mobile.html %}</div>
 
-          <div class="file-data-box">
-            <div class="file-name">{{ file.name }}</div>
-            <div class="file-links">
-              <a class="file-link-source" href="./files/{{ file.folder }}/source.{{ file.type }}" download="{{ file.folder }}-source.{{ file.type }}" target="_blank">Source</a>
-              <a class="file-link-aseprite" href="./files/{{ file.folder }}/source.aseprite" download="{{ file.folder }}.aseprite" target="_blank">Aseprite</a>
-            </div>
-          </div>
-        </div>
-      {% endfor %}
-    </div>
+    <script>
+      function orientationChange() {
+        if(screen.availHeight > screen.availWidth){
+          document.getElementById("desktop").style.display = "none";
+          document.getElementById("mobile").style.display = "initial";
+        } else {
+          document.getElementById("desktop").style.display = "initial";
+          document.getElementById("mobile").style.display = "none";
+        }
+      }
+
+      window.onorientationchange = orientationChange;
+      orientationChange();
+    </script>
 
     {% include cdn/anchor_js.html %}
   </body>
